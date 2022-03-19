@@ -21,7 +21,7 @@ WPEWEBKIT_LICENSE_FILES = \
 	Source/WebCore/LICENSE-APPLE \
 	Source/WebCore/LICENSE-LGPL-2.1
 
-WPEWEBKIT_DEPENDENCIES = host-gperf host-python host-ruby \
+WPEWEBKIT_DEPENDENCIES = host-gperf host-python3 host-ruby \
 	libgles wpebackend libepoxy cairo jpeg libpng harfbuzz icu webp libsoup \
 	libgcrypt libxslt openjpeg
 

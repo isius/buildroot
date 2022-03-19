@@ -674,7 +674,7 @@ comment "webrtcdsp needs a toolchain w/ C++, NPTL, gcc >= 4.8"
 
 config BR2_PACKAGE_GST1_PLUGINS_BAD_PLUGIN_WPE
 	bool "wpe"
-	default y
+	default n
 	depends on BR2_PACKAGE_WPEWEBKIT
 	depends on BR2_PACKAGE_GST1_PLUGINS_BASE_HAS_LIB_OPENGL
 	depends on !BR2_PACKAGE_WPEWEBKIT_MEDIA_STREAM
