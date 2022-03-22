@@ -20,10 +20,18 @@ disable_overscan=1
 # 256, 512 or 1024 MB total memory
 gpu_mem_256=100
 gpu_mem_512=100
-gpu_mem_1024=100
+gpu_mem_1024=384
 
 # fixes rpi (3B, 3B+, 3A+, 4B and Zero W) ttyAMA0 serial console
 dtoverlay=miniuart-bt
 
 # enable autoprobing of Bluetooth driver without need of hciattach/btattach
 dtoverlay=krnbt=on
+
+# Force 720p
+hdmi_group=1
+hdmi_mode=4
+
+# Silent
+disable_splash=1
+boot_delay=0
