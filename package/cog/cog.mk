@@ -4,7 +4,7 @@
 #
 ################################################################################
 
-COG_VERSION = 0.12.1
+COG_VERSION = 0.12.4
 COG_SITE = https://wpewebkit.org/releases
 COG_SOURCE = cog-$(COG_VERSION).tar.xz
 COG_INSTALL_STAGING = YES
@@ -28,7 +28,7 @@ endif
 
 ifeq ($(BR2_PACKAGE_COG_PLATFORM_DRM),y)
 COG_CONF_OPTS += -DCOG_PLATFORM_DRM=ON
-COG_DEPENDENCIES += libdrm libinput
+COG_DEPENDENCIES += libdrm libinput libgbm libegl
 else
 COG_CONF_OPTS += -DCOG_PLATFORM_DRM=OFF
 endif
